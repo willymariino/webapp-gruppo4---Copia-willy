@@ -4,17 +4,22 @@ const Viaggi = () => {
 
 
     return <>
-        <div>
+        <section className="travels-container">
             <h1>Viaggi:</h1>
-            <div>
-                <label htmlFor="search">Cerca viaggi:</label>
-                <input type="text" id="search" />
+
+            <div className="card-container">
+
+                <div>
+                    <label htmlFor="search">Cerca viaggi:</label>
+                    <input type="text" id="search" />
+                </div>
+
+                <div className="travels">
+                    {viaggi?.map(viaggio => <TravelCard key={viaggio.id} data={viaggio} />)}
+                </div>
             </div>
 
-            <div>
-                {viaggi?.map(viaggio => <TravelCard key={viaggio.id} data={viaggio}/>)}
-            </div>
-        </div>
+        </section>
     </>
 }
 

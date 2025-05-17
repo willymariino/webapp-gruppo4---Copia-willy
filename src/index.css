@@ -1,0 +1,35 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.travels-container {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.card-container {
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    min-width: 50%;
+}
+
+.travels {
+
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: calc(250px * 3 + 40px);
+
+}
+
+.travel-card {
+    border: 2px rgba(128, 128, 128, 0.5);
+    border-radius: 35px;
+}
