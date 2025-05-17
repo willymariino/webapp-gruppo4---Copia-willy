@@ -36,4 +36,12 @@
     border: 2px solid rgba(128, 128, 128, 0.5);
     border-radius: 35px;
     padding: 3%;
+    background-color: rgba(144, 238, 144, 0.5);
+}
+
+@media screen and (max-width: 600px) {
+
+    .travels {
+        grid-template-columns: 1fr;
+    }
 }
